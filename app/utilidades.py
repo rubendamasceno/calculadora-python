@@ -1,4 +1,9 @@
 def leiaInt(msg):
+    """
+    -> Valida números inteiros
+    :param msg: recebe uma mensagem
+    :return: número inteiro
+    """
     while True:
         try:
             n = int(input(msg))
@@ -25,6 +30,11 @@ def linha(msg=''):
     print('-' * tam)
 
 def cabecalho(msg):
+    """
+    -> Cria uma mensagem em cabecalho
+    :param msg: recebi uma mensagem
+    :return: retorna um cabeçalho
+    """
     linha(msg)
     print(msg)
     linha(msg)

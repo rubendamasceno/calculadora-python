@@ -1,6 +1,11 @@
 from app.utilidades import cabecalho
 
 def existeArquivo(txt):
+    """
+    -> Verifica se um arquivo existe
+    :param txt: recebe um arquivo
+    :return: False or true
+    """
     try:
         a = open(txt, 'rt')
         a.close()
@@ -10,6 +15,11 @@ def existeArquivo(txt):
         return True
 
 def criarArquivo(txt):
+    """
+    -> Cria um arquivo
+    :param txt: arquivo para criar
+    :return: Arquivo criado
+    """
     try:
         a = open(txt, 'wt+')
         a.close()
@@ -18,6 +28,11 @@ def criarArquivo(txt):
         print('\03331mHouve uma pequena falha ao criar o arquivo.\033[m')
 
 def lerArquivo(txt):
+    """
+    -> le um arquivo
+    :param txt: arquivo para ler
+    :return: lista de linhas do arquivo
+    """
     try:
         a = open(txt, 'rt')
     except:
@@ -29,6 +44,12 @@ def lerArquivo(txt):
         a.close()
 
 def cadastrarArquivo(arq, conta):
+    """
+    -> escreve, adiciona coisas no arquivo
+    :param arq: arquivo para cadastrar
+    :param conta: contas feitas no programa
+    :return: histórico das contas no arquivo
+    """
     try:
         a = open(arq, 'at')
     except:
