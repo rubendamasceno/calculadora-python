@@ -1,0 +1,6 @@
+Soma:20.0
+Soma:20.0
+Subtração:-1.0
+Multiplicação:144.0
+Divisão:5.00
+Soma:20.0
